@@ -5,7 +5,7 @@
   #become: true
   vars:
     - homedir: /deploy_home
-    - hostip: {{ ansible_host }}
+    - hostip: "{{ ansible_host }}"
 
   tasks:
     - name: "Create the directories"
