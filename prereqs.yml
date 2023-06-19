@@ -2,7 +2,7 @@
 - name: Prereq to COntainer Deployment
   hosts: "{{ run_hosts }}"
   gather_facts: false
-  become: true
+  #become: true
   vars:
     - homedir: ~/deploy_home
     - hostip: "{{ ansible_host }}"
@@ -16,7 +16,7 @@
         - syscom
         - sysorg
         - nginx
-      become_user: ec2_user
+  #    become_user: ec2_user
 
     - name: "Create the httpd syscom file"
       ansible.builtin.copy:
