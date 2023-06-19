@@ -1,0 +1,12 @@
+---
+# tasks file for roles/podman_install
+- name: Register system
+  community.general.redhat_subscription:
+    state: present
+    username: techvangelist06
+    password: L0rd&S@v!our
+    auto_attach: true
+- name: installing podman
+  ansible.builtin.package:
+    name: podman
+    state: present

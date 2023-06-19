@@ -1,0 +1,6 @@
+---
+# tasks file for roles/deploy_webpage
+- name: Copying file into home
+  copy:
+    src: index.html
+    dest: /home

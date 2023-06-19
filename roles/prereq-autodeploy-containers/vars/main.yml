@@ -1,0 +1,4 @@
+---
+# vars file for roles/prereq-autodeploy-containers
+homedir: ./deploy_home
+hostip: 192.168.8.152
