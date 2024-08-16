@@ -8,7 +8,11 @@
   - name: Deployment prerequisets
     ansible.builtin.include_role:
       name: prereq-autodeploy-containers
-
+  
+  - name: Deploy the Web Page
+    ansible.builtin.include_role:
+      name: podman_install
+  
   #- name: Deploy the Web Page
   #  ansible.builtin.include_role:
   #    name: deploy_webpage
