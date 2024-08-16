@@ -1,6 +1,6 @@
 ---
 - name: Deploy a containerized webserver
-  hosts: localhost
+  hosts: "{{ run_hosts }}"
   gather_facts: false
   #become: true
 
