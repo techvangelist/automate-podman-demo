@@ -1,4 +1,4 @@
 ---
 # vars file for roles/prereq-autodeploy-containers
 homedir: /deploy_home
-hostip: {{ ansible_host }}
+hostip: "{{ ansible_host }}"
