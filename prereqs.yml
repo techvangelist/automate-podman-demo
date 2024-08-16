@@ -1,5 +1,5 @@
 ---
-- name: Prereq to COntainer Deployment
+- name: Prereq to Container Deployment
   hosts: "{{ run_hosts }}"
   gather_facts: false
   become: true
